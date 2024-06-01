@@ -11,7 +11,6 @@ const inputValidation = z.object({
 })
 
 app.post("/sum",async(req,res)=>{
-
     const parsedIntput = inputValidation.safeParse(req.body);
 
     if(!parsedIntput.success){
